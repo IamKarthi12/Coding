@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		int count1=0,count2=0;
+		  for(int i=2;i<=x/2;i++){
+		      if(x%i==0){
+		          count1++;
+		      }}
+		      for(int i=2;i<=y/2;i++){
+		         if(y%i==0){
+		          count2++;
+		      }
+		  }   
+		if(count1==0 && count2==0 && ((x-y)==2 || (x-y)== -2)){
+		    System.out.println("Twin Prime");
+		}
+		else{
+		    System.out.println("Not Twin Prime");
+		}
+	}
+}
