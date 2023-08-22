@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int x=n,y=n,pow,count=0,sum=0,rem,rem1;
+	    while(x>0){
+	        rem=x%10;
+	       ++count;
+	        x=x/10;
+	    }
+	    while(y>0){
+	        rem1=y%10;
+	        pow=1;
+	        for(int i=1;i<=count;i++){
+	            pow=pow*rem1;
+	        }
+	        sum=sum+pow;
+	        y=y/10;
+	    }
+	if(n==sum)
+	System.out.println("amstrong");
+	else{
+	    System.out.println("not a amstrong");
+	}
+	}
+}
